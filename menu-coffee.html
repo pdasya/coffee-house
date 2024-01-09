@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/coffee-favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/coffee-favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo-header.svg" alt="coffee-house-logo" class="logo__img">
+            </a>
+            <nav class="menu-nav header__menu">
+                <ul class="menu__list header__menu-list">
+                    <li class="menu__list-item">
+                        <a href="index.html#favorites-coffee" class="menu__list-link">
+                            Favorite coffee
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="index.html#about" class="menu__list-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="index.html#mobile-app" class="menu__list-link">
+                            Mobile app
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#footer" class="menu__list-link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu__right-coffee">
+                <a class="menu__right-button">Menu</a>
+                <img src="images/coffee-cup.svg" alt="coffee-cup" class="menu__right-img">
+                <div class="menu__right-burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2" fill="none">
+                        <path d="M1 1H17" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2" fill="none">
+                        <path d="M1 1H17" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="menu__right-burger" id="menu__right-burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2" fill="none">
+                    <path d="M1 1H17" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="2" viewBox="0 0 18 2" fill="none">
+                    <path d="M1 1H17" stroke="#403F3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <section class="burger__menu" id="burger__menu">
+        <div class="container burger__inner">
+            <div class="burger__content">
+                <nav class="burger__nav" id="burger__nav">
+                    <ul class="burger__list" id="burger__list">
+                        <li class="burger__list-item">
+                            <a href="index.html#favorites-coffee" class="burger__list-link">
+                                Favorite coffee
+                            </a>
+                        </li>
+                        <li class="burger__list-item">
+                            <a href="index.html#about" class="burger__list-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="burger__list-item">
+                            <a href="index.html#mobile-app" class="burger__list-link">
+                                Mobile app
+                            </a>
+                        </li>
+                        <li class="burger__list-item">
+                            <a href="#footer" class="burger__list-link">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__burger-coffee">
+                    <a class="menu__burger-button">Menu</a>
+                    <img src="images/coffee-cup.svg" alt="coffee-cup" class="menu__burger-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="offer">
+            <div class="offer__inner">
+                <h1 class="offer__header">
+                    Behind each of our cups hides an <span class="offer__header-italic">amazing surprise</span>
+                </h1>
+                <div class="offer__drink" id="offer__drink">
+                    <a class="offer__drink-item offer__drink-item-active" id="coffee-tab">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                            <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                            <text x="4" y="20" font-family="Arial" font-size="16" fill="black">☕</text>
+                        </svg>                        
+                        <p class="item__text">Coffee</p>
+                    </a>
+                    <a class="offer__drink-item" id="tea-tab">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                            <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                            <text x="4" y="20" font-family="Arial" font-size="16" fill="black">🍵</text>
+                        </svg>                           
+                        <p class="item__text">Tea</p>
+                    </a>
+                    <a class="offer__drink-item" id="dessert-tab">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                            <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                            <text x="4" y="20" font-family="Arial" font-size="16" fill="black">🍰</text>
+                        </svg>
+                        <p class="item__text">Dessert</p>
+                    </a>
+                </div>
+            </div>
+        <div class="menu">
+            <div class="menu__inner container">
+                <div class="menu__item" onclick="openModal('Irish coffee', 'Fragrant black coffee with Jameson Irish whiskey and whipped milk', '$7.00', 'images/coffee-1.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-1.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                            <h2 class="menu__item-name">Irish coffee</h2>
+                            <p class="menu__item-description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                        <p class="menu__item-price">$7.00</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Kahlua coffee', 'Classic coffee with milk and Kahlua liqueur under a cap of frothed milk', '$7.00', 'images/coffee-2.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-2.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        
+                        <h2 class="menu__item-name">Kahlua coffee</h2>
+                        <p class="menu__item-description">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</p>
+                        <p class="menu__item-price">$7.00</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Honey raf', 'Espresso with frothed milk, cream and aromatic honey', '$5.50', 'images/coffee-3.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-3.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Honey raf</h2>
+                        <p class="menu__item-description">Espresso with frothed milk, cream and aromatic honey</p>
+                        <p class="menu__item-price">$5.50</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Ice cappuccino', 'Cappuccino with soft thick foam in summer version with ice', '$5.00', 'images/coffee-4.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-4.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Ice cappuccino</h2>
+                        <p class="menu__item-description">Cappuccino with soft thick foam in summer version with ice</p>
+                        <p class="menu__item-price">$5.00</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Espresso', 'Classic black coffee', '$4.50', 'images/coffee-5.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-5.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Espresso</h2>
+                        <p class="menu__item-description">Classic black coffee</p>
+                        <p class="menu__item-price">$4.50</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Latte', 'Espresso coffee with the addition of steamed milk and dense milk foam', '$5.50', 'images/coffee-6.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-6.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Latte</h2>
+                        <p class="menu__item-description">Espresso coffee with the addition of steamed milk and dense milk foam</p>
+                        <p class="menu__item-price">$5.50</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Latte macchiato', 'Espresso with frothed milk and chocolate', '$5.50', 'images/coffee-7.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-7.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Latte macchiato</h2>
+                        <p class="menu__item-description">Espresso with frothed milk and chocolate</p>
+                        <p class="menu__item-price">$5.50</p>
+                    </div>
+                </div>
+                <div class="menu__item" onclick="openModal('Coffee with cognac', 'Fragrant black coffee with cognac and whipped cream', '$6.50', 'images/coffee-8.png', ['200 ml', '300 ml', '400 ml'], ['Sugar', 'Cinnamon', 'Syrup'])">
+                    <div class="menu__item-img-wrapper">
+                        <img src="images/coffee-8.png" alt="coffee picture" class="menu__item-img">
+                    </div>
+                    <div class="menu__item-text">
+                        <h2 class="menu__item-name">Coffee with cognac</h2>
+                        <p class="menu__item-description">Fragrant black coffee with cognac and whipped cream</p>
+                        <p class="menu__item-price">$6.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load__button" id="load__button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17 8H21.4C21.7314 8 22 7.73137 22 7.4V3" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class=" footer__inner container">
+            <div class="coffee-time">
+                <p class="coffee-time__text">Sip, Savor, Smile. <span class="coffee-time__text-italic">It’s coffee time!</span></p>
+                <div class="coffee-time__media">
+                    <button class="media__twitter">
+                    </button>
+                    <button class="media__instagram">
+                    </button>
+                    <button class="media__facebook">
+                    </button>
+                </div>
+            </div>
+            <div class="contacts">
+                <p class="contacts__text-header">Contact us</p>
+                <div class="contacts__data">
+                    <div class="contacts__data-address">
+                        <img src="images/pin-alt.svg" alt="pin-alt icon" class="contacts__icon">
+                        <a class="contacts__text" href="https://www.google.com/maps/place/%D0%9B%D0%BE%D1%81-%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B5%D1%81+%D0%9C%D1%83%D0%B7%D0%B5%D1%83%D0%BC+%D0%BE%D1%84+%D0%90%D1%80%D1%82/@34.0695201,-118.3558333,12.58z/data=!4m9!1m2!2m1!1s8558+Green+Rd.,+LA!3m5!1s0x80c2b93cca9c7ab1:0x9b191d3aac3e37!8m2!3d34.0639323!4d-118.3592293!16zL20vMDIwczAw?entry=ttu" target="_blank">8558 Green Rd., LA</a>
+                    </div>
+                    <div class="contacts__data-phone">
+                        <img src="images/phone.svg" alt="phone icon" class="contacts__icon">
+                        <a class="contacts__text" href="tel:+1(603)555-0123">+1 (603) 555-0123</a>
+                    </div>
+                    <div class="contacts__data-schedule">
+                        <img src="images/clock.svg" alt="clock icon" class="contacts__icon">
+                        <a class="contacts__text">Mon-Sat: 9:00 AM – 23:00 PM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <section class="modal" id="modal">
+        <div class="modal__inner">
+            <div class="modal__item-img-wrapper">
+                <img src="images/coffee-1.png" alt="coffee picture" class="modal__img">
+            </div>
+            <div class="modal__content">
+                <div class="modal__name-descr">
+                    <h3 class="modal__name">Irish coffee</h3>
+                    <p class="modal__description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                </div>
+                <div class="modal__size">
+                    <p class="modal__size-descr">Size</p>
+                    <div class="modal__size-buttons">
+                        <a class="modal__size-item modal__size-item-active">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="10" y="20" font-family="Arial" font-size="16" fill="#403F3D">S</text>
+                            </svg>                        
+                            <p class="item__text-sizes">200 ml</p>
+                        </a>
+                        <a class="modal__size-item">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="9" y="20" font-family="Arial" font-size="16" fill="#403F3D">M</text>
+                            </svg>                        
+                            <p class="item__text-sizes">300 ml</p>
+                        </a>
+                        <a class="modal__size-item">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="10" y="20" font-family="Arial" font-size="16" fill="#403F3D">L</text>
+                            </svg>                        
+                            <p class="item__text-sizes">400 ml</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__additives">
+                    <p class="modal__additives-descr">Additives</p>
+                    <div class="modal__additives-buttons">
+                        <a class="modal__additives-item">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="11" y="20" font-family="Arial" font-size="16" fill="#403F3D">1</text>
+                            </svg>                        
+                            <p class="item__text-additive">Sugar</p>
+                        </a>
+                        <a class="modal__additives-item">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="11" y="20" font-family="Arial" font-size="16" fill="#403F3D">2</text>
+                            </svg>                        
+                            <p class="item__text-additive">Cinnamon</p>
+                        </a>
+                        <a class="modal__additives-item">
+                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect x="0.5" width="30" height="30" rx="15" fill="#C1B6AD"/>
+                                <path d="M7.5 23.12H23.5V7.12H7.5V23.12Z" fill="url(#pattern0)"/>
+                                <text x="11" y="20" font-family="Arial" font-size="16" fill="#403F3D">3</text>
+                            </svg>                        
+                            <p class="item__text-additive">Syrup</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal__prices">
+                    <p class="modal__prices-total">
+                        Total:
+                    </p>
+                    <p class="modal__prices-price">
+                        $7.00
+                    </p>
+                </div>
+                <div class="modal__precautions">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_268_9737)">
+                        <path d="M8 7.66663V11" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 5.00667L8.00667 4.99926" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_268_9737">
+                        <rect width="16" height="16" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <p class="modal__precautions-text">
+                        The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+                    </p>
+                </div>
+                <a class="modal__button" onclick="closeModal()">
+                    Close
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="src/script-menu.js"></script>
+</body>
+</html>
